@@ -159,7 +159,7 @@ function Contact() {
                 <Link
                   data-toggle="tooltip"
                   title="view on map"
-                  to="https://maps.app.goo.gl/k68kDJ4BH5LbQEat5?g_st=iw "
+                  to="https://maps.app.goo.gl/RXztVwaPV579nku39"
                 >
                   <h6
                     style={{
@@ -168,7 +168,7 @@ function Contact() {
                     }}
                     className="mt-0"
                   >
-                    Cameroon-Yaounde, Melen, near NASEY
+                    Cameroon-Douala, BP Cité, near Total Energie
                   </h6>
                 </Link>
               </span>
@@ -200,8 +200,8 @@ function Contact() {
                 </h5>
                 <Link
                   data-toggle="tooltip"
-                  title="appeler +237 620 26 39 11"
-                  to="tel:+237620263911"
+                  title="appeler +237 690 903 327"
+                  to="tel:+237690903327"
                 >
                   <h6
                     style={{
@@ -210,7 +210,7 @@ function Contact() {
                     }}
                     className="mt-0"
                   >
-                    +237 620 26 39 11 / +237 6 91 87 37 20
+                    +237 690 903 327
                   </h6>
                 </Link>
               </span>
@@ -243,7 +243,7 @@ function Contact() {
                 <Link
                   data-toggle="tooltip"
                   title="mail"
-                  to="mailto:mboumelae@gmail.com?subject=Need more informations"
+                  to="mailto:afoueguimdouanla@gmail.com?subject=Need more informations"
                 >
                   <h6
                     style={{
@@ -252,7 +252,7 @@ function Contact() {
                     }}
                     className="my-0"
                   >
-                    mboumelae@gmail.com
+                    afoueguimdouanla@gmail.com
                   </h6>
                 </Link>
               </span>
