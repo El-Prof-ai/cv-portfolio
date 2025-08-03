@@ -9,14 +9,19 @@ import Paper from '@mui/material/Paper';
 
 const steps = [
   {
-    school: 'National Advanced School of Engeneering of Yaounde',
-    diploma: `Master Level`,
-    year: '2020 - 2025',
+    school: 'Prooftag Catis S.A',
+    diploma: `End of studies internship`,
+    year: 'début Février 2025 - Fin Juillet 2025',
   },
   {
-    school: 'Government Bilingual High School Mendong',
-    diploma: `Baccalaureate C`,
-    year: '2013 - 2020',
+    school: 'Prooftag Catis S.A',
+    diploma: `Pre-engineering internship`,
+    year: 'début Juillet 2024 - Fin Août 2024',
+  },
+  {
+    school: 'Prooftag Catis S.A',
+    diploma: `Assistant engineer internship`,
+    year: 'début Juillet 2023 - Fin Août 2023',
   }
 ];
 
@@ -45,7 +50,7 @@ export default function VerticalLinearStepper() {
           marginBottom: '24px',
         }}
       >
-        Academic Background
+        Professional Background
       </h3>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
@@ -109,7 +114,7 @@ export default function VerticalLinearStepper() {
           sx={{ p: 3 }}
         >
           <p>
-            You have completed my academic journey, 
+            You have completed my career path, 
             click if you wish to start again
           </p>
           <Button

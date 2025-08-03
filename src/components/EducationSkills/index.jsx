@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import '@fortawesome/fontawesome-free/js/all.min.js';
 import styled from 'styled-components';
 import VerticalLinearStepper from './stepper';
+import VerticalLinearStepper1 from './stepper1';
 
 const technologies = [
   {
@@ -15,28 +16,38 @@ const technologies = [
   },
   {
     title: 'Node JS',
-    progress: '65%',
+    progress: '45%',
     icon: 'fab fa-node fa-2x me-3',
   },
   {
     title: 'React JS / Next JS',
-    progress: '80%',
+    progress: '65%',
     icon: 'fab fa-react fa-2x me-3',
   },
   {
-    title: 'Python / Django',
-    progress: '60%',
+    title: 'Python / Django / FastAPI',
+    progress: '70%',
     icon: 'fab fa-python fa-2x me-3',
   },
   {
-    title: 'C / C++',
-    progress: '40%',
+    title: 'C',
+    progress: '20%',
     icon: 'fa-solid fa-c fa-2x me-3',
   },
   {
     title: 'SQL / noSQL',
-    progress: '70%',
+    progress: '60%',
     icon: 'fa-solid fa-database fa-2x me-3',
+  },
+  {
+    title: 'NLP',
+    progress: '75%',
+    icon: 'fa-solid fa-brain fa-2x me-3',
+  },
+  {
+    title: 'CNN / RCNN(object detection)',
+    progress: '70%',
+    icon: 'fa-solid fa-project-diagram fa-2x me-3',
   },
 ];
 
@@ -82,18 +93,20 @@ function EducationSkills() {
         </div>
         <div className="d-flex justify-content-center mb-5 mb-md-5 pb-md-5">
           <TitleCustom className="text-secondary">
-            Academy & Aptitude
+            Academic / professional background & Skills
           </TitleCustom>
         </div>
         <div className="row align-items-center">
           <div className="col-12 col-md-6">
             <VerticalLinearStepper />
+            <VerticalLinearStepper1 />
           </div>
           <div className="col-12 col-md-6 border-start border-top border-light">
             <p className="">
-              For 3+ years, I have been continuously learning in the field of
-              full stack and experimenting with new technologies and frameworks,
-              and here you can see a summary of my skills.
+              For over three years, I've been continuously training in the full-stack 
+              field and experimenting with new technologies and frameworks. 
+              I've also explored aspects related to artificial intelligence. 
+              Here's a summary of my skills.
             </p>
             {technologies.map((technology, index) => (
               <div key={index} className="mb-3">
