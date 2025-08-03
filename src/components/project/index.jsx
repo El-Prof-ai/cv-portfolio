@@ -13,25 +13,25 @@ import { Link } from 'react-router-dom';
 
 const project = [
   {
-    title: 'Elections présidentielles',
+    title: 'Presidential elections',
     framework: 'React JS',
     image: elections,
     link: 'https://github.com/El-Prof-ai/elections-cameroun',
   },
   {
-    title: 'portofolio',
+    title: 'Portofolio',
     framework: 'React JS',
     image: portfolio,
     link: 'https://github.com/El-Prof-ai/cv-portfolio',
   },
   {
-    title: 'Générateur de feu de pharmacie',
+    title: 'Pharmacy fire generator',
     framework: 'JavaFX',
     image: GenerateurFeu,
     link: 'https://github.com/El-Prof-ai/CC-Pharmacie',
   },
   {
-    title: 'Service de gestion des utilisateurs',
+    title: 'User Management Service',
     framework: 'Spring Boot',
     image: ApiRest,
     link: 'https://github.com/El-Prof-ai/user-service',
