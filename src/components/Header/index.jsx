@@ -34,9 +34,9 @@ function Header() {
               className="bg-gradient p-1 rounded-3 text-light "
               style={{ backgroundColor: '#7E74F1' }}
             >
-              M.
+              El
             </span>
-            SEL
+            Prof
           </a>
           <button
             className="navbar-toggler my-1"
@@ -103,7 +103,7 @@ function Header() {
                       : { color: '#F1F1F1' }
                   }
                 >
-                  Skills
+                  Background & Skills
                 </a>
               </li>
               {/* <li className="nav-item">
