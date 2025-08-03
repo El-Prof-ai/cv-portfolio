@@ -7,6 +7,33 @@ import portrait from '../../assets/profil.jpg';
 import styled from 'styled-components';
 import cv from '../../file/CV_ALEX_FOUEGUIM_DOUANLA.pdf';
 
+const networks = [
+  {
+    title: 'github',
+    link: 'https://github.com/El-Prof-ai',
+    icon: 'bi bi-github',
+    class: 'list-inline-item mx-md-5',
+  },
+  {
+    title: 'whatsapp',
+    link: 'https://wa.me/+237690903327',
+    icon: 'bi bi-whatsapp',
+    class: 'list-inline-item mx-2',
+  },
+  {
+    title: 'linkedin',
+    link: 'https://www.linkedin.com/in/alex-foueguim-douanla-1a91892b8/',
+    icon: 'bi bi-linkedin',
+    class: 'list-inline-item mx-2 mx-md-5',
+  },
+  {
+    title: 'mail',
+    link: 'mailto:afoueguimdouanla@gmail.com?subject=Need more informations',
+    icon: 'bi bi-envelope-at',
+    class: 'list-inline-item mx-2 mx-md-0',
+  },
+];
+
 const PortraitContainer = styled.div`
   position: relative;
   width: 170px;
@@ -43,33 +70,6 @@ const PortraitWrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
-
-const networks = [
-  {
-    title: 'github',
-    link: 'https://github.com/El-Prof-ai',
-    icon: 'bi bi-github',
-    class: 'list-inline-item mx-md-5',
-  },
-  {
-    title: 'whatsapp',
-    link: 'https://wa.me/+237690903327',
-    icon: 'bi bi-whatsapp',
-    class: 'list-inline-item mx-2',
-  },
-  {
-    title: 'linkedin',
-    link: 'https://www.linkedin.com/in/alex-foueguim-douanla-1a91892b8/',
-    icon: 'bi bi-linkedin',
-    class: 'list-inline-item mx-2 mx-md-5',
-  },
-  {
-    title: 'mail',
-    link: 'mailto:afoueguimdouanla@gmail.com?subject=Need more informations',
-    icon: 'bi bi-envelope-at',
-    class: 'list-inline-item mx-2 mx-md-0',
-  },
-];
 
 const TitleStyle = styled.h6`
   display: inline-block;
@@ -117,7 +117,7 @@ function Hero() {
             <TitleCustom className="text-secondary my-1 my-md-2">
               Alex
             </TitleCustom>
-            <Mboumela className="my-1 my-md-2">FOUEGUIM DOUANLA</Mboumela>
+            <Mboumela className="my-1 my-md-2">FOUEGUIM</Mboumela>
             <p className="">
               I am a junior Full Stack developer and I use several cutting-edge technologies 
               such as Java/Spring, React, Python, SQL, Git and many others. I am also passionate 

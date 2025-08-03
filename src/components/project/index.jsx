@@ -5,30 +5,37 @@ import 'uikit/dist/js/uikit-core.js';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '@fortawesome/fontawesome-free/js/all.min.js';
 import styled from 'styled-components';
-import elearning from '../../assets/elearning-sm.png';
+import ApiRest from '../../assets/ApiRest.png';
+import elections from '../../assets/elections.png';
 import portfolio from '../../assets/portfolio.png';
-import api from '../../assets/api.png';
+import GenerateurFeu from '../../assets/GenerateurFeu.png';
 import { Link } from 'react-router-dom';
 
 const project = [
   {
-    title: 'e-learning',
-    framework: 'Spring & Thymeleaf',
-    image: elearning,
-    link: 'https://github.com/mboumela-elton/e-learning',
+    title: 'Elections présidentielles',
+    framework: 'React JS',
+    image: elections,
+    link: 'https://github.com/El-Prof-ai/elections-cameroun',
   },
   {
     title: 'portofolio',
     framework: 'React JS',
     image: portfolio,
-    link: 'https://github.com/mboumela-elton/cv-portfolio',
+    link: 'https://github.com/El-Prof-ai/cv-portfolio',
   },
   {
-    title: 'API Rest',
-    framework: 'Spring boot / spring security',
-    image: api,
-    link: 'https://github.com/mboumela-elton/authentication-api',
+    title: 'Générateur de feu de pharmacie',
+    framework: 'JavaFX',
+    image: GenerateurFeu,
+    link: 'https://github.com/El-Prof-ai/CC-Pharmacie',
   },
+  {
+    title: 'Service de gestion des utilisateurs',
+    framework: 'Spring Boot',
+    image: ApiRest,
+    link: 'https://github.com/El-Prof-ai/user-service',
+  }
 ];
 
 const TitleStyle = styled.h6`

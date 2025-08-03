@@ -18,10 +18,10 @@ const services = [
       'I ensure the common and particular functionalities (at your option) of the applications until the hosting and the maintenance',
   },
   {
-    title: 'transversal notions',
-    icon: 'bi bi-globe d-block',
+    title: 'NLP and Computer Vision Specialist',
+    icon: 'bi bi-robot d-block',
     description:
-      'I am open to the agile method and I have knowledge of machine learning, networks, cybersecurity, scraping, trading ...',
+      'I develop applications that use natural language processing and computer vision to provide advanced functionalities',
   },
 ];
 
