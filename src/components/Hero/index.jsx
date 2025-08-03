@@ -3,32 +3,69 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'uikit/dist/css/uikit-core.css';
 import 'uikit/dist/js/uikit-core.js';
 import { Link } from 'react-router-dom';
-import portrait from '../../assets/portrait.svg';
+import portrait from '../../assets/profil.jpg';
 import styled from 'styled-components';
-import cv from '../../file/CV_MBOUMELA_Elton.pdf';
+import cv from '../../file/CV_ALEX_FOUEGUIM_DOUANLA.pdf';
+
+const PortraitContainer = styled.div`
+  position: relative;
+  width: 170px;
+  height: 210px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const PortraitBg = styled.div`
+  position: absolute;
+  width: 150px;
+  height: 190px;
+  background: #7e74f1;
+  border-radius: 22px;
+  top: 10px;
+  left: 10px;
+  transform: rotate(-10deg);
+  z-index: 1;
+  box-shadow: 0 4px 24px rgba(126, 116, 241, 0.15);
+`;
+
+const PortraitWrapper = styled.div`
+  position: relative;
+  width: 150px;
+  height: 190px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #22232a;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 const networks = [
   {
     title: 'github',
-    link: 'https://github.com/mboumela-elton',
+    link: 'https://github.com/El-Prof-ai',
     icon: 'bi bi-github',
     class: 'list-inline-item mx-md-5',
   },
   {
     title: 'whatsapp',
-    link: 'https://wa.me/+237691873720',
+    link: 'https://wa.me/+237690903327',
     icon: 'bi bi-whatsapp',
     class: 'list-inline-item mx-2',
   },
   {
     title: 'linkedin',
-    link: 'https://www.linkedin.com/in/elton-mboumela-679a1226b/',
+    link: 'https://www.linkedin.com/in/alex-foueguim-douanla-1a91892b8/',
     icon: 'bi bi-linkedin',
     class: 'list-inline-item mx-2 mx-md-5',
   },
   {
     title: 'mail',
-    link: 'mailto:mboumelae@gmail.com?subject=Need more informations',
+    link: 'mailto:afoueguimdouanla@gmail.com?subject=Need more informations',
     icon: 'bi bi-envelope-at',
     class: 'list-inline-item mx-2 mx-md-0',
   },
@@ -78,13 +115,15 @@ function Hero() {
             <TitleStyle>MY NAME IS</TitleStyle>
             <br />
             <TitleCustom className="text-secondary my-1 my-md-2">
-              Elton
+              Alex
             </TitleCustom>
-            <Mboumela className="my-1 my-md-2">Mboumela.</Mboumela>
+            <Mboumela className="my-1 my-md-2">FOUEGUIM DOUANLA</Mboumela>
             <p className="">
-              As a Junior Full Stack developer, I use several cutting-edge
-              technologies such as Java/Spring, React, Python, C++, SQL, Git and many
-              more. My passion is to find the most suitable solution for your needs.
+              I am a junior Full Stack developer and I use several cutting-edge technologies 
+              such as Java/Spring, React, Python, SQL, Git and many others. I am also passionate 
+              about AI where I did a relevant project that takes into account the notions of natural 
+              language processing and computer vision. My passion as a generalist engineer in 
+              computer engineering is to take on challenges; I have no limits.
             </p>
             <div className="py-2">
               <a href={cv}>
@@ -114,11 +153,16 @@ function Hero() {
                 className="uk-card uk-card-default uk-card-body uk-animation-shake"
                 style={{ background: 'transparent' }}
               >
-                <img
-                  src={portrait}
-                  alt="photo_profil"
-                  className="w-100 h-100"
-                />
+                <PortraitContainer>
+                  <PortraitBg />
+                  <PortraitWrapper>
+                    <img
+                      src={portrait}
+                      alt="photo_profil"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    />
+                  </PortraitWrapper>
+                </PortraitContainer>
               </div>
             </div>
           </div>
